@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  limesurvey:
+  - apiVersion: v2
+    appVersion: 5-apache
+    created: "2024-07-23T12:17:18.333018331Z"
+    description: Limesurvey is the number one open-source survey software.
+    digest: 50c6591ddd096c718a1d40f5fcdb971002494b65c1f77a11e47396b0597d1e9d
+    icon: https://raw.githubusercontent.com/martialblog/helm-charts/master/limesurvey/icon.png
+    maintainers:
+    - email: markus@martialblog.de
+      name: martialblog
+    name: limesurvey
+    sources:
+    - https://github.com/martialblog/helm-charts
+    - https://github.com/martialblog/docker-limesurvey/
+    - https://limesurvey.org/
+    type: application
+    urls:
+    - https://github.com/fairagro/limesurvey-helm/limesurvey-0.8.0.tgz
+    version: 0.8.0
+generated: "2024-07-23T12:17:18.332069282Z"
