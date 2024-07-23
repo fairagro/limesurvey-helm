@@ -3,7 +3,7 @@
 ## Add Helm Repository
 
 ```
-helm repo add martialblog https://fairagro.github.io/limesurvey-helm/
+helm repo add limesurvey https://fairagro.github.io/limesurvey-helm/
 helm repo update
 ```
 
