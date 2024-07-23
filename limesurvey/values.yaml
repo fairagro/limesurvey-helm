@@ -103,6 +103,8 @@ limesurvey:
     enabled: true
   readinessProbe:
     enabled: true
+  # Additional environment variables
+  env: []
 
 ## Enable persistence using Persistent Volume Claims
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
