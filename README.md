@@ -22,4 +22,10 @@ helm package limesurvey
 helm repo index . --url https://fairagro.github.io/limesurvey-helm
 ```
 
-The first command will create the package file `limesurvey-<x.z.y>.tgz` and the second one will create the index file `index.yaml`. Both need to be commited to the repo.
+The first command will create the package file `limesurvey-<x.z.y>.tgz` and the second one will create the index file `index.yaml`. Both need to be commited to the repo. Please note that github will take a few minutes to deploy the new release via github pages.
+
+## Future improvements ##
+
+It would be nice to have the following features in futures:
+* create and deal with github releases
+* add github actions to automate the release and packaging process 
