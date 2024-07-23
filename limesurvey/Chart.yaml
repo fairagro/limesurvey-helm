@@ -5,10 +5,10 @@ type: application
 version: 0.8.0
 appVersion: "5-apache"
 maintainers:
-  - email: markus@martialblog.de
-    name: martialblog
-icon: https://raw.githubusercontent.com/martialblog/helm-charts/master/limesurvey/icon.png
+  - email: carsten.scharfenberg@zalf.de
+    name: Carsten scharfenberg
 sources:
+  - https://github.com/fairagro/limesurvey-helm
   - https://github.com/martialblog/helm-charts
   - https://github.com/martialblog/docker-limesurvey/
   - https://limesurvey.org/
