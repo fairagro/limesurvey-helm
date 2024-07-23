@@ -19,7 +19,7 @@ This is a fork of https://github.com/martialblog/helm-charts which provides a he
 
 ```bash
 helm package limesurvey
-helm repo index . --url https://github.com/fairagro/limesurvey-helm
+helm repo index . --url https://fairagro.github.io/limesurvey-helm
 ```
 
 The first command will create the package file `limesurvey-<x.z.y>.tgz` and the second one will create the index file `index.yaml`. Both need to be commited to the repo.
