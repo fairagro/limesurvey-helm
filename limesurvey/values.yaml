@@ -105,8 +105,7 @@ limesurvey:
     enabled: true
   # Additional environment variables
   env: []
-
-additional_config: ~
+  additional_config: ~
 
 ## Enable persistence using Persistent Volume Claims
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/

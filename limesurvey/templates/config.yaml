@@ -29,8 +29,8 @@ data:
         'debug'=>0,
         'debugsql'=>0,
         'mysqlEngine' => 'MyISAM',
-        {{- if  .Values.additional_config }}
-        {{ .Values.additional_config | nindent 8 }}
+        {{- if  .Values.limesurvey.additional_config }}
+        {{ .Values.limesurvey.additional_config | nindent 8 }}
         {{- end }}
       )
     );
