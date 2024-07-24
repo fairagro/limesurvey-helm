@@ -252,7 +252,7 @@ spec:
             claimName: {{ .Values.persistence.existingClaim | default (include "limesurvey.fullname" .) }}
       {{- else }}
           emptyDir: {}
-      {{- end -}}
+      {{- end }}
         - name: config
           configMap:
             name: limesurvey-config
