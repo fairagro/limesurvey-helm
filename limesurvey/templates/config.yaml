@@ -29,6 +29,8 @@ data:
         'debug'=>0,
         'debugsql'=>0,
         'mysqlEngine' => 'MyISAM',
-        'ssl_disable_alert' => true,
+        {{- if  .Values.additional_config }}
+        {{ .Values.additional_config | nindent 8 }}
+        {{- end }}
       )
     );
