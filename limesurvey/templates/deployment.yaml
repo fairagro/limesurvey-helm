@@ -88,6 +88,9 @@ spec:
               {{- if .Values.persistence.subPath }}
               subPath: {{ .Values.persistence.subPath }}
               {{- end }}
+            - name: config
+              mountPath: "/var/www/html/application/config/config.php"
+              subPath: config.php
           {{- range .Values.extraVolumeMounts }}
           {{- if .configMap }}
             - name: {{ .name }}
@@ -250,6 +253,9 @@ spec:
       {{- else }}
           emptyDir: {}
       {{- end -}}
+        - name: config
+          configMap:
+            name: limesurvey-config
       {{- range .Values.extraVolumeMounts }}
         - name: {{ .name }}
           {{- if .existingClaim }}

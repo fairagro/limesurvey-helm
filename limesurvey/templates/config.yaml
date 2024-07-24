@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: limesurvey-config
+data:
+  config.php: |
+    <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+    return array(
+      'components' => array(
+        'db' => array(
+          'connectionString' => printf("%s:host=%s;port=%s;dbname=%s", getenv(DB_TYPE), getenv(DB_HOST), getenv(DB_PORT), getenv(DB_NAME));
+          'emulatePrepare' => true,
+          'username' => getenv(DB_USERNAME),
+          'password' => getenv(DB_PASSWORD),
+          'charset' => 'utf8',
+          'tablePrefix' => 'lime_',
+        ),
+        //'session' => array (
+        //   'class' => 'application.core.web.DbHttpSession',
+        //   'connectionID' => 'db',
+        //   'sessionTableName' => '{{sessions}}',
+        //),
+        'urlManager' => array(
+          'urlFormat' => 'path',
+          'rules' => array(),
+          'showScriptName' => true,
+        ),
+        'request' => array(
+          'baseUrl' => '',
+        ),
+      ),
+      'config'=>array(
+        'publicurl'=>'',
+        'debug'=>0,
+        'debugsql'=>0,
+        'mysqlEngine' => 'MyISAM',
+      )
+    );
