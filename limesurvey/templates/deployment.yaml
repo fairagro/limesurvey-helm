@@ -90,7 +90,7 @@ spec:
               {{- end }}
           {{- range .Values.extraVolumeMounts }}
           {{- if .configMap }}
-            - name: {{ .configMap.name }}
+            - name: {{ .name }}
               mountPath: {{ .configMap.mountPath }}
               subPath: {{ .configMap.subPath | default "" }}
           {{- end }}
