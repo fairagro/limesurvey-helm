@@ -8,7 +8,7 @@ data:
     return array(
       'components' => array(
         'db' => array(
-          'connectionString' => '{{ .Values.externalDatabase.type }}:host={{ .Values.externalDatabase.host }};port={{ quote .Values.externalDatabase.port }};dbname={{ .Values.externalDatabase.database }}',
+          'connectionString' => '{{ .Values.externalDatabase.type }}:host={{ .Values.externalDatabase.host }};port={{ .Values.externalDatabase.port }};dbname={{ .Values.externalDatabase.database }}',
           'emulatePrepare' => true,
           'username' => getenv('DB_USERNAME'),
           'password' => getenv('DB_PASSWORD'),
