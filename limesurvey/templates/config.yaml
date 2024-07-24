@@ -8,7 +8,7 @@ data:
     return array(
       'components' => array(
         'db' => array(
-          'connectionString' => printf("%s:host=%s;port=%s;dbname=%s", getenv(DB_TYPE), getenv(DB_HOST), getenv(DB_PORT), getenv(DB_NAME));
+          'connectionString' => printf("%s:host=%s;port=%s;dbname=%s", getenv(DB_TYPE), getenv(DB_HOST), getenv(DB_PORT), getenv(DB_NAME)),
           'emulatePrepare' => true,
           'username' => getenv(DB_USERNAME),
           'password' => getenv(DB_PASSWORD),
