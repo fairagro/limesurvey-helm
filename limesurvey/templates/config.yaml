@@ -8,7 +8,7 @@ data:
     return array(
       'components' => array(
         'db' => array(
-          'connectionString' => printf('%s:host=%s;port=%s;dbname=%s', getenv('DB_TYPE'), getenv('DB_HOST'), getenv('DB_PORT'), getenv('DB_NAME')),
+          'connectionString' => '{{ .Values.externalDatabase.type }}:host={{ .Values.externalDatabase.host }};port={{ .Values.externalDatabase.port }};dbname={{ .Values.externalDatabase.database }}',
           'emulatePrepare' => true,
           'username' => getenv('DB_USERNAME'),
           'password' => getenv('DB_PASSWORD'),
@@ -31,3 +31,26 @@ data:
         'mysqlEngine' => 'MyISAM',
       )
     );
+
+
+    externalDatabase:
+  # Type of external database ("mysql" or "pgsql")
+  type: mysql
+  # External Database server host
+  host: mariadb.example.com
+  # External Database server port
+  port: 3306
+  # External Database username (use existingSecretConfig.usernameField to load from secret)
+  username: limesurvey
+  # External Database user password
+  # (ignored when existingSecret is set, use existingSecretConfig.passwordField to change key)
+  password: null
+  # External Database database name (use existingSecretConfig.databaseField to load from secret)
+  database: limesurvey
+  # Use an existing secret for retrieving the database password.
+  # The secret must contain the field "db-password" (field name configurable via existingSecretConfig.passwordField)
+  existingSecret: null
+  existingSecretConfig:
+    passwordField: db-password
+    usernameField: null
+    databaseField: null
