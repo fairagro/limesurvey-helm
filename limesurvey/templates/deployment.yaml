@@ -89,10 +89,11 @@ spec:
               subPath: {{ .Values.persistence.subPath }}
               {{- end }}
           {{- range .Values.extraVolumeMounts }}
-            - name: {{ .name }}
-              mountPath: {{ .mountPath }}
-              subPath: {{ .subPath | default "" }}
-              readOnly: {{ .readOnly }}
+          {{- if .configMap }}
+            - name: {{ .configMap.name }}
+              mountPath: {{ .configMap.mountPath }}
+              subPath: {{ .configMap.subPath | default "" }}
+          {{- end }}
           {{- end }}
           {{- range .Values.extraEmptyDirMounts }}
             - name: {{ .name }}
@@ -259,7 +260,7 @@ spec:
             path: {{ .hostPath }}
           {{- else if .configMap }}
           configMap:
-            name: {{ .configMap }}
+            name: {{ .configMap.name }}
             {{- with .items }}
             items:
               {{- toYaml . | nindent 14 }}
