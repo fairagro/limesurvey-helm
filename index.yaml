@@ -3,7 +3,25 @@ entries:
   limesurvey:
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.585443848Z"
+    created: "2024-07-24T14:51:40.297512569Z"
+    description: Limesurvey is the number one open-source survey software.
+    digest: 1583121ea5ef28f60299bd401588f31b3fc9401ba220a89305d34776f0a0e32d
+    maintainers:
+    - email: carsten.scharfenberg@zalf.de
+      name: Carsten scharfenberg
+    name: limesurvey
+    sources:
+    - https://github.com/fairagro/limesurvey-helm
+    - https://github.com/martialblog/helm-charts
+    - https://github.com/martialblog/docker-limesurvey/
+    - https://limesurvey.org/
+    type: application
+    urls:
+    - https://fairagro.github.io/limesurvey-helm/limesurvey-0.8.12.tgz
+    version: 0.8.12
+  - apiVersion: v2
+    appVersion: 5-apache
+    created: "2024-07-24T14:51:40.296781513Z"
     description: Limesurvey is the number one open-source survey software.
     digest: 9fd1e2496945707f387a2a9222dcc85b17d06f6b04698700136ee60a9f662f98
     maintainers:
@@ -21,7 +39,7 @@ entries:
     version: 0.8.11
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.584313744Z"
+    created: "2024-07-24T14:51:40.296073119Z"
     description: Limesurvey is the number one open-source survey software.
     digest: a1f53fd7ab717cf800636e9423784c1d857d72b68519e9c5cda4bdb174fd58e4
     maintainers:
@@ -39,7 +57,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.596113094Z"
+    created: "2024-07-24T14:51:40.307683615Z"
     description: Limesurvey is the number one open-source survey software.
     digest: fa6e03e71869bb1098457493b6fb5915502b74a56ae796c918b34bf91446cf61
     maintainers:
@@ -57,7 +75,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.595511542Z"
+    created: "2024-07-24T14:51:40.30704826Z"
     description: Limesurvey is the number one open-source survey software.
     digest: 424b68b9b9d7b782bc213afbf77192252fe36a235b5f52bedde018d5c70084f9
     maintainers:
@@ -75,7 +93,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.594901647Z"
+    created: "2024-07-24T14:51:40.306375429Z"
     description: Limesurvey is the number one open-source survey software.
     digest: a723d9064fcb3bb76556c6549348ea18b34e1e142dc874c77c618f186635201d
     maintainers:
@@ -93,7 +111,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.59434291Z"
+    created: "2024-07-24T14:51:40.305720474Z"
     description: Limesurvey is the number one open-source survey software.
     digest: 9d72c497801003409011b93cb16ed60a5cba40791860ed4f52c82b00894d3d1d
     maintainers:
@@ -111,7 +129,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.593715172Z"
+    created: "2024-07-24T14:51:40.305020265Z"
     description: Limesurvey is the number one open-source survey software.
     digest: df292bf798d8446a423bc569da460deb094a329f1daee334009eee26637e5a44
     maintainers:
@@ -129,7 +147,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.593073446Z"
+    created: "2024-07-24T14:51:40.304242249Z"
     description: Limesurvey is the number one open-source survey software.
     digest: b94561d9b9849b5472d5ec0f72682781d7902dc6a71b3f88b79a527b1d5a7050
     maintainers:
@@ -147,7 +165,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.592351861Z"
+    created: "2024-07-24T14:51:40.302440968Z"
     description: Limesurvey is the number one open-source survey software.
     digest: 811154b15fe068aedc4f2242afad5c12ae2ce0a0be72310c8110e5e9d7caff7f
     maintainers:
@@ -165,7 +183,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.591644555Z"
+    created: "2024-07-24T14:51:40.298199294Z"
     description: Limesurvey is the number one open-source survey software.
     digest: ec8cc93077fa61bcad995e4100ff19c16c36549a3cd2f81a253718a27b152570
     maintainers:
@@ -183,7 +201,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.583565259Z"
+    created: "2024-07-24T14:51:40.295266481Z"
     description: Limesurvey is the number one open-source survey software.
     digest: b45c73331d38b27e46f477ac49e932d3a1ff30e13bf329d2bceeb0b08cd91293
     maintainers:
@@ -201,7 +219,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 5-apache
-    created: "2024-07-24T14:25:26.582799421Z"
+    created: "2024-07-24T14:51:40.294521794Z"
     description: Limesurvey is the number one open-source survey software.
     digest: 50c6591ddd096c718a1d40f5fcdb971002494b65c1f77a11e47396b0597d1e9d
     icon: https://raw.githubusercontent.com/martialblog/helm-charts/master/limesurvey/icon.png
@@ -217,4 +235,4 @@ entries:
     urls:
     - https://fairagro.github.io/limesurvey-helm/limesurvey-0.8.0.tgz
     version: 0.8.0
-generated: "2024-07-24T14:25:26.581773833Z"
+generated: "2024-07-24T14:51:40.293709844Z"
