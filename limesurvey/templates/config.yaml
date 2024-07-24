@@ -29,5 +29,6 @@ data:
         'debug'=>0,
         'debugsql'=>0,
         'mysqlEngine' => 'MyISAM',
+        'ssl_disable_alert' => true,
       )
     );
